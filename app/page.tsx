@@ -36,7 +36,7 @@ export default function Home() {
       <h1 className="text-4xl mb-8">FAQs</h1>
 
       <FAQSection title="Why invest with us?">
-        Crypto is a very dangerous technology, there are good actors and and bad actors everywhere. Altruistic Finance is set up to be a non-domiciled business that shares all profits earned with it's investors, developers and anyone else otherwise involved with the business.
+        Crypto is a very dangerous technology, there are good actors and and bad actors everywhere. Altruistic Finance is set up to be a non-domiciled business that shares all profits earned with it&apos;s investors, developers and anyone else otherwise involved with the business.
       </FAQSection>
 
       <FAQSection title="How is your portfolio structured?">
