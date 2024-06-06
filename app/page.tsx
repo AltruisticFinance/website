@@ -2,21 +2,44 @@ import { Inter, Roboto, Roboto_Mono } from "next/font/google";
 const roboto = Roboto({ weight: '400', subsets: ["latin"] });
 const robotoMono = Roboto_Mono({ weight: '400', subsets: ["latin"] });
 
+interface FAQItem {
+  title: string,
+  children: any
+}
+
+const FAQSection = ({ title, children }: FAQItem) => {
+  return (
+    <div className="intro max-w-[75vw] mt-0 m-8 text-center">
+      <h1 className={`${robotoMono.className} text-2xl mb-4`}>{title}</h1>
+      <p className={`${roboto.className} text-xl`}>
+        {children}
+      </p>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-around p-24">
+    <main className="flex min-h-screen flex-col items-center">
 
-      <div className="flex flex-col items-center">
-        <h2 className={`text-4xl  mb-8 ${robotoMono.className}`}>Altruistic Finance</h2>
+      {/* INTRO */}
 
-        <div className="intro max-w-[800px] text-center">
-          <p className={`${roboto.className}`}>
-            A new era of business, where those who invest or work with us earn a slice of the pie, profits that aren't reinvested may then be distributed to owners on a regular basis.
-          </p>
-        </div>
+      <div className="intro text-2xl max-w-[75vw] m-32 text-center">
+        <p className={`${roboto.className}`}>
+          A new era of business, where those who invest or work with us earn a slice of the pie, profits that aren't reinvested may then be distributed to owners on a regular basis.
+        </p>
       </div>
 
-      
+      {/* FAQ */}
+      <h1 className="text-4xl mb-8">FAQs</h1>
+
+      <FAQSection title="Why invest with us?">
+        Crypto is a very dangerous technology, there are good actors and and bad actors everywhere. Altruistic Finance is set up to be a non-domiciled business that shares all profits earned with it's investors, developers and anyone else otherwise involved with the business.
+      </FAQSection>
+
+      <FAQSection title="How is your portfolio structured?">
+        Primarily our assets are held in Liquidity Pools spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards.
+      </FAQSection>
 
     </main>
   );

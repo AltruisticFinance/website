@@ -14,7 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      
+      <body>
+        <nav className="p-4">
+          <a className="font-bold text-xl" href='/'>Altruistic Finance</a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
