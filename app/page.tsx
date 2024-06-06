@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="intro text-2xl max-w-[75vw] m-32 text-center">
         <p className={`${roboto.className}`}>
-          A new era of business, where those who invest or work with us earn a slice of the pie, profits that aren't reinvested may then be distributed to owners on a regular basis.
+          A new era of business, where those who invest or work with us earn a slice of the pie, profits that aren&apos;t reinvested may then be distributed to owners on a regular basis.
         </p>
       </div>
 
@@ -40,6 +40,10 @@ export default function Home() {
       </FAQSection>
 
       <FAQSection title="How is your portfolio structured?">
+        Primarily our assets are held in <span className="text-orange-400">Liquidity Pools</span> spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards. If you would like more information you can visit the <Link href='/treasury'>treasury page</Link>.
+      </FAQSection>
+
+      <FAQSection title="Do I have to pay taxes?">
         Primarily our assets are held in <span className="text-orange-400">Liquidity Pools</span> spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards. If you would like more information you can visit the <Link href='/treasury'>treasury page</Link>.
       </FAQSection>
 
