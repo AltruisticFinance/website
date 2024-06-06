@@ -1,4 +1,6 @@
 import { Inter, Roboto, Roboto_Mono } from "next/font/google";
+import Link from "next/link";
+
 const roboto = Roboto({ weight: '400', subsets: ["latin"] });
 const robotoMono = Roboto_Mono({ weight: '400', subsets: ["latin"] });
 
@@ -38,7 +40,7 @@ export default function Home() {
       </FAQSection>
 
       <FAQSection title="How is your portfolio structured?">
-        Primarily our assets are held in Liquidity Pools spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards.
+        Primarily our assets are held in <span className="text-orange-400">Liquidity Pools</span> spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards. If you would like more information you can visit the <Link href='/treasury'>treasury page</Link>.
       </FAQSection>
 
     </main>
