@@ -44,7 +44,7 @@ export default function Home() {
       </FAQSection>
 
       <FAQSection title="Do I have to pay taxes?">
-        Primarily our assets are held in <span className="text-orange-400">Liquidity Pools</span> spanning multiple blockchains and assets, this helps us mitigate single blockchain or asset risk, allowing us to provide growth and distributions for our investors. Although some assets may temporarily go down, over time the crypto space does tend to trend upwards. If you would like more information you can visit the <Link href='/treasury'>treasury page</Link>.
+        Whether you have to pay any taxes on the income you receive depends entirely on your country of origin/domicile, we cannot provide advice on this aspect, if you are unsure you should contact a local tax advisor for support.
       </FAQSection>
 
     </main>
