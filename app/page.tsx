@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const roboto = Roboto({ weight: '400', subsets: ["latin"] });
 const robotoMono = Roboto_Mono({ weight: '400', subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 interface FAQItem {
   title: string,
@@ -13,7 +14,7 @@ const FAQSection = ({ title, children }: FAQItem) => {
   return (
     <div className="intro max-w-[75vw] mt-0 m-8 text-center">
       <h1 className={`${robotoMono.className} text-2xl mb-4`}>{title}</h1>
-      <p className={`${roboto.className} text-xl`}>
+      <p className={`${inter.className} text-xl`}>
         {children}
       </p>
     </div>
@@ -27,7 +28,7 @@ export default function Home() {
       {/* INTRO */}
 
       <div className="intro text-2xl max-w-[75vw] m-32 text-center">
-        <p className={`${roboto.className}`}>
+        <p className={`${inter.className}`}>
           A new era of business, where those who invest or work with us earn a slice of the pie, profits that aren&apos;t reinvested may then be distributed to owners on a regular basis.
         </p>
       </div>
